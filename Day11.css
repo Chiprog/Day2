@@ -1,0 +1,7 @@
+#grid-container{
+  display: grid;
+  grid-template-columns: 10px auto;
+  grid-template-rows: 30px auto;
+  background-color: red;
+  grid-column-gap: 30px;
+}
