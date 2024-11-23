@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="veiwport" content="width=
+    device-width, initial-scale=1.0">
+    <title>Day16</title>
+    <style>
+      form{
+        margin:auto;
+        }
+      input{
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input placeholder="Number1" id="a">
+      +
+      <input placeholder="Number2" id='b'>
+      <button onclick="sum('a','b')">add</button>
+    </form>
+    <script>
+      const sum = function(a,b){
+        var num1 = document.getElementById(a)
+        var num2 = document.getElementById(b)
+        var tot = Number(num1.value)+Number(num2.value)
+        alert(tot)
+        console.log()
+      }
+    </script>
+  </body>
+</html>
