@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day20</title>
+    <style>
+    *{
+      padding: 8px;
+    }
+      #main{
+        margin: auto;
+        width: auto;
+        max-width: 600px;
+        background-image: conic-gradient(from 190deg at 40% 45%,#156212, #92fe9d, #d98911 );
+      }
+      h2{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        color: #156212;
+        background-color: #d98911;
+        border-radius: 50px;
+        margin-bottom: 16px;
+      }
+      
+      div{
+        background-color:#156212 ;
+        color:#d98911 ;
+        border-radius: 20px;
+        margin: 8px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id = "main">
+      <h2>STUDENTS DETAILS</h2>
+      <!--<div>
+        Name : John Doe
+      </div>
+      <div>
+        age : 20
+      </div>
+      <div>
+        course :computer Science
+      </div>
+      <div>
+        grade : A
+      </div>
+    </div>-->
+    <script>
+      var det = {name:"John Doe", age:20, course:"computer-science", grade:"A", isEnrolled:true};
+      main=document.getElementById("main");
+      for (var a in det){
+        console.log(a)
+        const grad =document.createElement('div');
+        grad.innerHTML = a + " : " +det[a];
+        main.appendChild(grad)
+      }
+    </script>
+  </body>
+</html>
